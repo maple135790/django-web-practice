@@ -8,7 +8,7 @@
     <select name="countryId" id="">
         <option value="999">全部顯示</option>
         {% for country in countries %}
-           <option value="{{country.id}}">{{country.id}} {{country.name}}</option>
+           <option value="{{country.id}}">{{country.name}}</option>
         {% endfor %}
     </select>
     {% csrf_token %}
